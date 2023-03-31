@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+union student {
+  char name[50];
+  float gpa;
+}a,b;
+int main() {
+  printf("Enter student's name: ");
+  scanf("%s",a.name);
+  printf("Enter student's GPA: ");
+  scanf("%f", &b.gpa);
+  printf("Student's name:%s\n",a.name);
+  printf("Student's GPA: %f\n",b.gpa);
+  return 0;
+}
